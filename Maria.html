@@ -3,139 +3,286 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mariafer eres la mejor</title>
+<title>Para Mi Amor  ❤️</title>
+
 <style>
-    body {
-        background: #0d0d0d;
-        color: #fff;
-        font-family: "Arial", sans-serif;
-        text-align: center;
-        margin: 0;
-        padding: 0;
-    }
 
-    h1 {
-        font-size: 28px;
-        margin: 20px;
-        color: #ff8ef5;
-        text-shadow: 0 0 10px #ff3ed1;
-    }
+body{
+margin:0;
+font-family:"Georgia",serif;
+font-style:italic;
+text-align:center;
+background:radial-gradient(circle at top,#2b1055,#000);
+color:white;
+overflow-x:hidden;
+}
 
-    .carrusel img {
-        width: 90%;
-        height: auto;
-        margin: 10px auto;
-        border-radius: 15px;
-        box-shadow: 0 0 15px #ff6ee2;
-    }
+.estrellas{
+position:fixed;
+width:100%;
+height:100%;
+background:url("https://i.imgur.com/9QZ7K7G.png");
+opacity:0.4;
+animation:mover 60s linear infinite;
+}
 
-    .texto {
-        text-align: justify;
-        padding: 18px;
-        font-size: 17px;
-        line-height: 1.5;
-    }
+@keyframes mover{
+from{background-position:0 0;}
+to{background-position:10000px 5000px;}
+}
 
-    .final {
-        font-style: italic;
-        color: #ffd4ff;
-    }
+.carta{
+background:rgba(255,255,255,0.95);
+color:#333;
+margin:40px auto;
+padding:25px;
+border-radius:20px;
+max-width:90%;
+box-shadow:0 10px 40px rgba(0,0,0,0.4);
+}
 
-    button {
-        background: #ff4cd6;
-        border: none;
-        padding: 12px 25px;
-        font-size: 18px;
-        color: white;
-        border-radius: 20px;
-        margin: 20px;
-        cursor: pointer;
-        box-shadow: 0 0 10px #ff4cd6;
-    }
+.nombre{
+font-size:38px;
+color:#ff2e75;
+margin-bottom:10px;
+}
 
-    .stars {
-        display: none;
-        font-size: 22px;
-        animation: sparkle 1s infinite;
-        margin-top: 10px;
-    }
+img{
+width:80%;
+max-width:260px;
+border-radius:15px;
+margin:20px 0;
+box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
 
-    @keyframes sparkle {
-        0% {opacity: 0.2;}
-        50% {opacity: 1;}
-        100% {opacity: 0.2;}
-    }
+p{
+font-size:16px;
+line-height:1.6;
+}
+
+.codigo{
+background:#111;
+color:#00ff88;
+padding:15px;
+border-radius:10px;
+font-family:monospace;
+text-align:left;
+overflow-x:auto;
+}
+
+button{
+background:#ff2e75;
+border:none;
+color:white;
+padding:12px 20px;
+font-size:16px;
+border-radius:10px;
+cursor:pointer;
+margin-top:15px;
+}
+
+button:hover{
+background:#e91e63;
+}
+
+.corazon{
+position:fixed;
+font-size:20px;
+pointer-events:none;
+}
+
+.petalo{
+position:fixed;
+font-size:18px;
+animation:caer 8s linear infinite;
+}
+
+@keyframes caer{
+0%{transform:translateY(-10vh) rotate(0deg);opacity:0;}
+10%{opacity:1;}
+100%{transform:translateY(100vh) rotate(360deg);opacity:0;}
+}
+
+.sorpresa{
+position:fixed;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+background:white;
+color:#333;
+padding:25px;
+border-radius:15px;
+display:none;
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
+max-width:80%;
+}
+
 </style>
 </head>
+
 <body>
 
-<h1>Querida Mariafer 💗</h1>
+<div class="estrellas"></div>
 
-<div class="carrusel">
-    <img src="mafer1.jpeg">
-    <img src="mafer2.jpeg">
-    <img src="Zootopia.jpeg">
-</div>
+<div class="carta">
 
-<div class="texto">
-    <p>Hola , quizás estés leyendo esto querida decirte que nunca me imaginé que alguien que conozco 2 semanas se volvería la persona más importante para mí, quizas suene algo loco pero esta chica lo logro pareciera que la conozco incluso de antes quizás sea su manera de tratarme o quizás su forma de mirarme...</p>
+<h1>🌸 Feliz Día de la Mujer 🌸</h1>
 
-    <p>MariaFer , a ella le dicen Mafer , María , Fer eh incluso más apodos pero yo no sé cómo llamarla quizás en un futuro se me ocurrirá a esta chica la conocí por q la invite a acompañarme a una gala de dibujos en la cual yo participaría al inicio tenía miedo de q no sea lo q ella esperaba de mi , pero al final nada de eso le importo y para mí tampoco solo que esa noche la pasamos muy bien y ps bueno esa fue la primera vez que la conocí</p>
+<div class="nombre" id="nombre"></div>
 
-    <p><b>-La invite a una gala de arte... Y sin querer ella fue la mejor obra.
-    Entre dibujos y nervios descubrí que lo más bonito de aquella noche fue su sonrisa.</b></p>
+<img src="miamor.jpeg" alt="Te amo mushooo mi Amor ">
 
-    <p>La segunda vez que la vi estaba con nervios ya que conocería a sus hermanas pero antes la invite a ver zootopia yo llegué 20 minutos tarde xddd , y nunca me imaginé que aquella chica me esperaría y ahí comprendí que ella siempre estaría para mi durante mi vida y saliendo ps fuimos a ver fnaf con sus hermanas y me encantó conocerlas un poco aunque me la pasé hablando más con ella aún me siento algo mal por haber llegado tarde a una película la cual la emocionaba pero bueno le pedí disculpas y ps bueno ese día fue la primera vez q la vi a los ojos , ojos que reconocería incluso en otra vida tras 2 semanas sabía que era lo más preciado en mi vida.</p>
+<p>
+Entre millones de personas apareciste tú,
+y desde entonces mi mundo
+se siente un poco más bonito.
+</p>
 
-    <h2>Dos Noches y un Destino </h2>
+<div class="codigo">
+<pre>
+    <p id="resultado">function miCorazon(){
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prueba</title>
+</head>
 
-    <p>La conocí bajo luces de gala,
-    donde el arte se colgaba en las paredes,
-    pero fue su sonrisa la que pintó mi noche.</p>
+<body>
 
-    <p>Con nervios me acerqué,
-    temiendo no ser suficiente,
-    pero a ella no le importó nada,
-    solo que estuviéramos juntos.
-    Y así, entre risas y dibujos,
-    el miedo se volvió historia.</p>
-
-    <p>La segunda vez…
-    la vida me puso a prueba:
-    veinte minutos tarde,
-    y una película que la emocionaba.
-    Creí que se iría,
-    pero ella esperó.
-    Y al verla ahí,
-    entendí que algunos corazones
-    te eligen incluso en el retraso.</p>
-
-    <p>Conocí a sus hermanas,
-    y aunque hablaba más con ella,
-    fue en sus ojos
-    donde me quedé a vivir.
-    Ojos que recordaría
-    en cualquier universo,
-    en cualquier tiempo.</p>
-
-    <p class="final">Me encantó conocerla…
-    y solo quiero conocer cada parte de su mundo,
-    cuidarla,
-    y ayudarla a sanar
-    si en su corazón aún queda algún dolor...</p>
-</div>
-
-<audio controls autoplay loop>
-  <source src="soñe.mp3" type="audio/mp3">
-</audio>
-
-<button onclick="mostrarEstrellas()">Presiona aquí Mafer </button>
-<div class="stars" id="stars">Gracias por estar en mi vida </div>
+<p id="resultado"></p>
 
 <script>
-function mostrarEstrellas() {
-    document.getElementById("stars").style.display = "block";
+
+function miCorazon(){
+
+let personaEspecial = "Mafer";
+
+if(personaEspecial === "Mafer"){
+return "Resultado del programa: Mafer = la mujer más especial de mi vida te amo mushoooo mi amor xddd, disculpame por no poderte hacer algo mejor  ❤️";
 }
+
+return "Error";
+
+}
+
+document.getElementById("resultado").innerText = miCorazon();
+
+</script>
+
+</body>
+</html>
+
+</pre>
+</div>
+
+<p id="resultado"></p>
+
+<button onclick="musica.play()">🎵 Reproducir música</button>
+
+<p>
+Eres fuerte, valiosa y demasiado importante para mí.
+</p>
+
+</div>
+
+<div class="sorpresa" id="sorpresa">
+A veces no sé cómo explicarlo…  
+pero desde que apareciste,  
+todo en mi vida se siente un poco más bonito,
+ por eso eres mi birdie  
+</div>
+
+<audio id="musica">
+<source src="zoe.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+
+const texto="Mafer ❤️";
+let i=0;
+
+function escribir(){
+if(i<texto.length){
+document.getElementById("nombre").innerHTML+=texto.charAt(i);
+i++;
+setTimeout(escribir,150);
+}
+}
+escribir();
+
+function miCorazon(){
+let personaEspecial="Mafer";
+if(personaEspecial==="Mafer"){
+return "Resultado del programa: Mafer = la mujer más especial de mi vida te amo mi birdie❤️";
+}
+}
+
+document.getElementById("resultado").innerText=miCorazon();
+
+function crearPetalo(){
+const petalo=document.createElement("div");
+petalo.className="petalo";
+petalo.innerHTML="🌸";
+petalo.style.left=Math.random()*100+"vw";
+petalo.style.animationDuration=(Math.random()*5+5)+"s";
+document.body.appendChild(petalo);
+setTimeout(()=>petalo.remove(),8000);
+}
+
+setInterval(crearPetalo,700);
+
+document.addEventListener("mousemove",crearCorazon);
+document.addEventListener("touchmove",crearCorazon);
+
+function crearCorazon(e){
+const corazon=document.createElement("div");
+corazon.className="corazon";
+corazon.innerHTML="❤️";
+
+let x=e.touches ? e.touches[0].clientX : e.clientX;
+let y=e.touches ? e.touches[0].clientY : e.clientY;
+
+corazon.style.left=x+"px";
+corazon.style.top=y+"px";
+
+document.body.appendChild(corazon);
+
+setTimeout(()=>corazon.remove(),1000);
+}
+
+document.addEventListener("click",explosion);
+
+function explosion(e){
+
+for(let i=0;i<20;i++){
+
+const corazon=document.createElement("div");
+corazon.innerHTML="❤️";
+corazon.style.position="fixed";
+corazon.style.left=e.clientX+"px";
+corazon.style.top=e.clientY+"px";
+corazon.style.fontSize="20px";
+
+document.body.appendChild(corazon);
+
+let x=(Math.random()-0.5)*200;
+let y=(Math.random()-0.5)*200;
+
+corazon.animate([
+{transform:"translate(0,0)",opacity:1},
+{transform:`translate(${x}px,${y}px)`,opacity:0}
+],{duration:1000});
+
+setTimeout(()=>corazon.remove(),1000);
+}
+
+document.getElementById("sorpresa").style.display="block";
+
+}
+
+const musica=document.getElementById("musica");
+
 </script>
 
 </body>
