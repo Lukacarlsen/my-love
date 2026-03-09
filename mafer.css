@@ -1,0 +1,64 @@
+/* Fondo animado */
+body {
+    background: linear-gradient(135deg, #ff99c8, #f7d9e3, #ffe5ec);
+    background-size: 400% 400%;
+    animation: fondo 10s ease infinite;
+
+    color: #3d3d3d;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 40px;
+}
+
+/* Animación del h1 */
+h1 {
+    color: #ff4d6d;
+    font-size: 3rem;
+    margin-bottom: 25px;
+    opacity: 0;
+    animation: aparecer 2s ease forwards;
+}
+
+/* Animaciones para párrafos */
+p {
+    background: rgba(255, 255, 255, 0.7);
+    margin: 10px auto;
+    padding: 12px;
+    width: 80%;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: subir 1s ease forwards;
+}
+
+/* Retrasos para que entren uno por uno */
+p:nth-child(2) { animation-delay: 0.5s; }
+p:nth-child(3) { animation-delay: 1s; }
+p:nth-child(4) { animation-delay: 1.5s; }
+p:nth-child(5) { animation-delay: 2s; }
+p:nth-child(6) { animation-delay: 2.5s; }
+
+/* Último párrafo en cursiva */
+.especial {
+    font-style: italic;
+    color: #c9184a;
+}
+
+/* Keyframes */
+@keyframes fondo {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes aparecer {
+    0% { opacity: 0; transform: scale(0.8); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes subir {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
