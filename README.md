@@ -1,1 +1,289 @@
-# my-love
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para Mi Amor  ❤️</title>
+
+<style>
+
+body{
+margin:0;
+font-family:"Georgia",serif;
+font-style:italic;
+text-align:center;
+background:radial-gradient(circle at top,#2b1055,#000);
+color:white;
+overflow-x:hidden;
+}
+
+.estrellas{
+position:fixed;
+width:100%;
+height:100%;
+background:url("https://i.imgur.com/9QZ7K7G.png");
+opacity:0.4;
+animation:mover 60s linear infinite;
+}
+
+@keyframes mover{
+from{background-position:0 0;}
+to{background-position:10000px 5000px;}
+}
+
+.carta{
+background:rgba(255,255,255,0.95);
+color:#333;
+margin:40px auto;
+padding:25px;
+border-radius:20px;
+max-width:90%;
+box-shadow:0 10px 40px rgba(0,0,0,0.4);
+}
+
+.nombre{
+font-size:38px;
+color:#ff2e75;
+margin-bottom:10px;
+}
+
+img{
+width:80%;
+max-width:260px;
+border-radius:15px;
+margin:20px 0;
+box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+p{
+font-size:16px;
+line-height:1.6;
+}
+
+.codigo{
+background:#111;
+color:#00ff88;
+padding:15px;
+border-radius:10px;
+font-family:monospace;
+text-align:left;
+overflow-x:auto;
+}
+
+button{
+background:#ff2e75;
+border:none;
+color:white;
+padding:12px 20px;
+font-size:16px;
+border-radius:10px;
+cursor:pointer;
+margin-top:15px;
+}
+
+button:hover{
+background:#e91e63;
+}
+
+.corazon{
+position:fixed;
+font-size:20px;
+pointer-events:none;
+}
+
+.petalo{
+position:fixed;
+font-size:18px;
+animation:caer 8s linear infinite;
+}
+
+@keyframes caer{
+0%{transform:translateY(-10vh) rotate(0deg);opacity:0;}
+10%{opacity:1;}
+100%{transform:translateY(100vh) rotate(360deg);opacity:0;}
+}
+
+.sorpresa{
+position:fixed;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+background:white;
+color:#333;
+padding:25px;
+border-radius:15px;
+display:none;
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
+max-width:80%;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="estrellas"></div>
+
+<div class="carta">
+
+<h1>🌸 Feliz Día de la Mujer 🌸</h1>
+
+<div class="nombre" id="nombre"></div>
+
+<img src="miamor.jpeg" alt="Te amo mushooo mi Amor ">
+
+<p>
+Entre millones de personas apareciste tú,
+y desde entonces mi mundo
+se siente un poco más bonito.
+</p>
+
+<div class="codigo">
+<pre>
+    <p id="resultado">function miCorazon(){
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prueba</title>
+</head>
+
+<body>
+
+<p id="resultado"></p>
+
+<script>
+
+function miCorazon(){
+
+let personaEspecial = "Mafer";
+
+if(personaEspecial === "Mafer"){
+return "Resultado del programa: Mafer = la mujer más especial de mi vida te amo mushoooo mi amor xddd, disculpame por no poderte hacer algo mejor  ❤️";
+}
+
+return "Error";
+
+}
+
+document.getElementById("resultado").innerText = miCorazon();
+
+</script>
+
+</body>
+</html>
+
+</pre>
+</div>
+
+<p id="resultado"></p>
+
+<button onclick="musica.play()">🎵 Reproducir música</button>
+
+<p>
+Eres fuerte, valiosa y demasiado importante para mí.
+</p>
+
+</div>
+
+<div class="sorpresa" id="sorpresa">
+A veces no sé cómo explicarlo…  
+pero desde que apareciste,  
+todo en mi vida se siente un poco más bonito,
+ por eso eres mi birdie  
+</div>
+
+<audio id="musica">
+<source src="zoe.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+
+const texto="Mafer ❤️";
+let i=0;
+
+function escribir(){
+if(i<texto.length){
+document.getElementById("nombre").innerHTML+=texto.charAt(i);
+i++;
+setTimeout(escribir,150);
+}
+}
+escribir();
+
+function miCorazon(){
+let personaEspecial="Mafer";
+if(personaEspecial==="Mafer"){
+return "Resultado del programa: Mafer = la mujer más especial de mi vida te amo mi birdie❤️";
+}
+}
+
+document.getElementById("resultado").innerText=miCorazon();
+
+function crearPetalo(){
+const petalo=document.createElement("div");
+petalo.className="petalo";
+petalo.innerHTML="🌸";
+petalo.style.left=Math.random()*100+"vw";
+petalo.style.animationDuration=(Math.random()*5+5)+"s";
+document.body.appendChild(petalo);
+setTimeout(()=>petalo.remove(),8000);
+}
+
+setInterval(crearPetalo,700);
+
+document.addEventListener("mousemove",crearCorazon);
+document.addEventListener("touchmove",crearCorazon);
+
+function crearCorazon(e){
+const corazon=document.createElement("div");
+corazon.className="corazon";
+corazon.innerHTML="❤️";
+
+let x=e.touches ? e.touches[0].clientX : e.clientX;
+let y=e.touches ? e.touches[0].clientY : e.clientY;
+
+corazon.style.left=x+"px";
+corazon.style.top=y+"px";
+
+document.body.appendChild(corazon);
+
+setTimeout(()=>corazon.remove(),1000);
+}
+
+document.addEventListener("click",explosion);
+
+function explosion(e){
+
+for(let i=0;i<20;i++){
+
+const corazon=document.createElement("div");
+corazon.innerHTML="❤️";
+corazon.style.position="fixed";
+corazon.style.left=e.clientX+"px";
+corazon.style.top=e.clientY+"px";
+corazon.style.fontSize="20px";
+
+document.body.appendChild(corazon);
+
+let x=(Math.random()-0.5)*200;
+let y=(Math.random()-0.5)*200;
+
+corazon.animate([
+{transform:"translate(0,0)",opacity:1},
+{transform:`translate(${x}px,${y}px)`,opacity:0}
+],{duration:1000});
+
+setTimeout(()=>corazon.remove(),1000);
+}
+
+document.getElementById("sorpresa").style.display="block";
+
+}
+
+const musica=document.getElementById("musica");
+
+</script>
+
+</body>
+</html>
